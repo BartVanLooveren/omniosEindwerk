@@ -1,0 +1,36 @@
+<!DOCTYPE service_bundle SYSTEM "/usr/share/lib/xml/dtd/service_bundle.dtd.1">
+<service_bundle name="sysconfig" type="profile">
+  <service name="system/timezone" type="service" version="1">
+    <instance enabled="true" name="default">
+      <property_group name="timezone" type="application">
+        <propval name="localtime" type="astring" value="Europe/Brussels"/>
+      </property_group>
+    </instance>
+  </service>
+  <service name="system/identity" type="service" version="1">
+    <instance enabled="true" name="node">
+      <property_group name="config" type="application">
+        <propval name="nodename" type="astring" value="omnios"/>
+      </property_group>
+    </instance>
+  </service>
+  <service name="system/keymap" type="service" version="1">
+    <instance enabled="true" name="default">
+      <property_group name="keymap" type="system">
+        <propval name="layout" type="astring" value="Belgian"/>
+      </property_group>
+    </instance>
+  </service>
+  <service name="system/console-login" type="service" version="1">
+    <instance enabled="true" name="default">
+      <property_group name="ttymon" type="application">
+        <propval name="terminal_type" type="astring" value="sun-color"/>
+      </property_group>
+    </instance>
+  </service>
+  <service name="network/physical" type="service" version="1">
+    <instance enabled="true" name="default">
+      <property_group name="netcfg" type="application"/>
+    </instance>
+  </service>
+</service_bundle>

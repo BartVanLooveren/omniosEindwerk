@@ -1,0 +1,3 @@
+e1000g0	linkid=int,1;class=int,1;media=int,4;
+rge0	linkid=int,2;class=int,1;media=int,4;
+rge1	linkid=int,3;class=int,1;media=int,4;

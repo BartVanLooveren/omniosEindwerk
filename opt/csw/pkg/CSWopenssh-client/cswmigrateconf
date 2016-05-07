@@ -1,0 +1,3 @@
+MIGRATE_FILES="ssh_config ssh_known_hosts ssh_known_hosts2 ssh_prng_cmds"
+SOURCE_DIR___default__="/opt/csw/etc/ssh"
+DEST_DIR___default__="/etc/opt/csw/ssh"
